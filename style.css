@@ -19,7 +19,7 @@ nav{
     height: 50px;
     width: 100%;
     border: 1px solid black;
-    margin-top: 20px;
+    margin-top: 19.9px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -27,31 +27,55 @@ nav{
 }
 
 nav h1{
-    font-family: "Ewert", serif;
+    font-family: "Monument Extended Bold";
     height: 100%;
     width: 28%;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 2.6vw;
-    font-weight: 550;
-    letter-spacing: -0.6vw;
+    font-size: 2.3vw;
+    letter-spacing: -0.1vw;
 }
 
 nav h2{
-    font-family: "Outfit", sans-serif;
+    font-family: "Lexend", sans-serif;
     border-right: 2px solid black;
     height: 100%;
     width: 22%;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.2vw;
-    font-weight: 500;
+    font-size: 1.14vw;
+    font-weight: 400;
 }
 
 nav h2:nth-last-child(1){
     border: none;
     width: 18%;
+}
+
+main .center{
+    height: 90%;
+    position: relative;
+    width: 100%;
+    padding: 50px;
+}
+
+main .center .content{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid black;
+    padding: 2px;
+}
+
+main .center .content video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center top;
+
+
 }
 
