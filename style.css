@@ -11,5 +11,47 @@ html , body{
 main{
     height: 100%;
     width: 100%;
+    padding-top: 0.1px;
     
 }
+
+nav{
+    height: 50px;
+    width: 100%;
+    border: 1px solid black;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+nav h1{
+    font-family: "Ewert", serif;
+    height: 100%;
+    width: 28%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.6vw;
+    font-weight: 550;
+    letter-spacing: -0.6vw;
+}
+
+nav h2{
+    font-family: "Outfit", sans-serif;
+    border-right: 2px solid black;
+    height: 100%;
+    width: 22%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2vw;
+    font-weight: 500;
+}
+
+nav h2:nth-last-child(1){
+    border: none;
+    width: 18%;
+}
+
