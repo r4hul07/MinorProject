@@ -85,5 +85,51 @@ main .center .content .overlay{
     position: absolute;;
     left: 0;
     bottom: 0;
+    padding: 30px;
 }
+
+
+main .center .content .overlay .over1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main .center .content .overlay .over1 h1{
+    font-family: "Monument Extended Bold";
+    font-size: 2.3vw;
+    color: white;
+}
+
+main .center .content .overlay .over1 h2{
+    font-family: "Lexend", sans-serif;
+    border: 1px solid white;
+    padding: 1vw 1.4vw;
+    border-radius: 50%;
+    font-size: 1.14vw;
+    color: white;
+}
+
+main .center .content .overlay .over2{
+    margin-top: 15px;
+    border-top: 2px solid white;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+
+}
+
+main .center .content .overlay .over2 h3{
+    font-family: "Lexend", sans-serif;
+    font-size: 1.14vw;
+    color: white;
+    font-weight: 300;
+}
+
+main .center .content .overlay .over2 img{
+    height: 2.2vw;
+    object-fit: cover;
+    object-position: center;
+}
+
 
