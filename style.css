@@ -79,3 +79,11 @@ main .center .content video{
 
 }
 
+main .center .content .overlay{
+    height: 40%;
+    width: 100%;
+    position: absolute;;
+    left: 0;
+    bottom: 0;
+}
+
