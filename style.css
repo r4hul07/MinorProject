@@ -129,9 +129,40 @@ main .center .content .overlay .over2 img {
   object-position: center;
 }
 
+.logos{
+  overflow: hidden;
+  height: 30%;
+  width: 100%;
+  padding: 25px 20px;
+  white-space: nowrap;
+}
 
+.logo-slide{
+  display: inline-block;
+  white-space: nowrap;
+  animation: slide 15s infinite linear;
+  
+}
 
+.logos .logo-slide img{
+  height: 10vw;
+  width: 10vw;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center top; 
+  margin: 0 20px;
+ 
 
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
 
 
 
