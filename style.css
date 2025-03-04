@@ -263,9 +263,10 @@ main .center .content .overlay .over2 img {
 }
 
 .page3{ 
-  height: 180vh;
+  height: 160vh;
   width: 100%;
   padding: 3vw 5vw;
+  margin-bottom: 90px;
 }
 
 
@@ -355,11 +356,43 @@ main .center .content .overlay .over2 img {
   width: 2.5vw;
   border-radius: 50%;
   position: absolute;
-  right: 1%;
+  right: 0.8%;
   top: 2%;
   display: flex;
   justify-content: center;
   align-items: center;
   color: rgba(0, 0, 0, 0.303);
 border: 3px solid rgba(0, 0, 0, 0.286);
+}
+
+.page4{
+  height: 100%;
+  width: 100%;
+  padding: 3vw 5vw;
+}
+
+.page4 > h2{
+  font-family: "Monument Extended Bold";
+  font-size: 2.3vw;
+  text-align: center;
+}
+
+.page4 .p4center{
+  margin-top: 20px;
+  height: 90%;
+  width: 100%;
+  padding: 25px;
+}
+
+.page4 .p4center .elem{
+  height: 25%;
+  width: 100%;
+  display: flex;
+  border-top: 2px solid black;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page4 .p4center .elem:nth-last-child(1){
+  border-bottom: 2px solid black;
 }
