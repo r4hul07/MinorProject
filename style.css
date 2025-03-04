@@ -16,7 +16,7 @@ main {
 }
 
 nav {
-  height: 50px;
+  height: 70px;
   width: 100%;
   border-top: 2px solid black;
   border-bottom: 2px solid black;
@@ -36,6 +36,28 @@ nav h1 {
   font-size: 2.5vw;
   letter-spacing: 0.5px;
   font-weight: 600;
+  position: relative;
+}
+
+nav h1::after {
+  content: "©";
+  font-weight: 400;
+  font-family: "Lexend", sans-serif;
+  font-size: 1vw;
+  position: absolute;
+  top: 13%;
+  right: 33%;
+}
+
+nav h1::before {
+  content: "Model Management";
+  font-weight: 400;
+  font-family: "Lexend", sans-serif;
+  font-size: 0.6vw;
+  position: absolute;
+  bottom: 13%;
+  right: 30%;
+  letter-spacing: -0.5px;
 }
 
 nav h2 {
@@ -360,11 +382,14 @@ main .center .content .overlay .over2 img {
   height: 100%;
   width: 100%;
   padding: 3vw 5vw;
+  margin-bottom: 20px;
 }
 
 .page4 > h2 {
   font-family: "New Amsterdam", sans-serif;
-  font-size: 2.3vw;
+  font-size: 4vw;
+  font-weight: 550;
+  letter-spacing: 4px;
   text-align: center;
 }
 
@@ -419,6 +444,94 @@ main .center .content .overlay .over2 img {
   font-weight: 500;
 }
 
+.page5 {
+  height: 100%;
+  width: 100%;
+  padding: 3vw 5vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+.page5 .p5left {
+  height: 100%;
+  width: 48%;
+  background: url('pg5.avif');
+  background-position: center top;
+  background-size: cover;
+}
+
+.page5 .p5right {
+  height: 100%;
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.page5 .p5right h2{
+  font-family: "New Amsterdam", sans-serif;
+  font-size: 4vw;
+  font-weight: 800;
+  letter-spacing: 4px;
+  margin-top: 5px;
+}
+
+.page5 .p5right h5{
+  font-family: "Lexend", sans-serif;
+  font-size: 1.2vw;
+  font-weight: 500;
+  width: 60%;
+}
+
+
+.page5 .p5right p{
+  font-family: "Lexend", sans-serif;
+  font-size: 0.9vw;
+  font-weight: 500;
+}
+
+
+.page5 .p5right .imagecontent {
+  height: 40%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.page5 .p5right .imagecontent img{
+  width: 55%;
+  object-fit: cover;
+  object-position: center top;
+}
+
+
+.page5 .p5right .imagecontent img:nth-last-child(1){
+  width: 40%;
+  object-position: center 10%;
+}
+
+
+
+.pg5extended{
+  height: 100%;
+  width: 100%;
+  padding: 5vw;
+}
+
+.pg5extended .imagecontent{
+  height: 100%;
+  width: 100%;
+  background: url('pg5extended1.jpg');
+  background-position: center top;
+  background-size: cover;
+
+}
+
+
+
+/* marque */
+
+
 .marque {
   border-top: 2px solid black;
   border-bottom: 2px solid black;
@@ -450,5 +563,108 @@ main .center .content .overlay .over2 img {
 }
 
 footer {
-  height: 50%;
+  margin-top: 5vw;
+  height: 40%;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+footer .f-elem{
+  height: 100%;
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+  border-right: 2px solid black;
+}
+
+footer .f-elem:nth-child(1){
+  padding: 0 3vw;
+}
+
+footer .f-elem h1,h2{
+  margin: 2vw;
+}
+
+
+
+footer .f-elem h1{
+  font-family: "New Amsterdam", sans-serif;
+  font-size: 3vw;
+  font-weight: 500;
+  margin-left: 10px;
+  position: relative;
+}
+
+footer .f-elem h1::before{
+  content: "Model Management";
+  font-weight: 500;
+  font-family: "Lexend", sans-serif;
+  font-size: 0.6vw;
+  position: absolute;
+  top: 19%;
+  right: -10%;
+}
+
+footer .f-elem h1::after{
+  content: "©";
+  font-weight: 400;
+  font-family: "Lexend", sans-serif;
+  font-size: 1.4vw;
+  position: absolute;
+  top: -4%;
+}
+
+footer .f-elem h2{
+  font-family: "Lexend", sans-serif;
+  font-size: 1.3vw;
+  font-weight: 400;
+}
+
+footer .f-elem:nth-child(2){
+  width: 20%;
+  display: flex;
+  justify-content: center;
+}
+
+footer .f-elem:nth-child(3){
+  padding: 0;
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  border: none;
+}
+
+footer .f-elem:nth-child(3) h3{
+  font-family: "Lexend", sans-serif;
+  font-size: 1 vw;
+  font-weight: 400;
+  margin: 2vw;
+}
+
+
+footer .f-elem .fbox .icons{
+  display: flex;
+  gap: 10px; 
+  padding: 2vw;
+  height: 40%;
+  width: 100%;
+}
+
+footer .f-elem .fbox .icons i{
+  font-size: 1.5vw;
+  color: black;
+  cursor: pointer;
+}
+
+
+
+
+.f-elem .fbox{
+  height: 70%;
+  width: 100%;
+  border-top: 2px solid black;
 }
