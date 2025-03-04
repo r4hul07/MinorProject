@@ -213,8 +213,7 @@ main .center .content .overlay .over2 img {
 .page2{
   height: 100%;
   width: 100%;
-  padding: 60px 90px;
-  padding-bottom: 0;
+  padding: 60px 90px 30px 90px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -224,9 +223,6 @@ main .center .content .overlay .over2 img {
 .page2 .pt1{
   height: 100%;
   width: 54%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background: url('pt1.avif');
   background-size: cover;
   background-position: center top;
@@ -243,3 +239,110 @@ main .center .content .overlay .over2 img {
   object-fit: cover;
   object-position: 0 10%;
 }
+
+.page2 .pt2 .pt2txt{
+  padding-top: 22px;
+  height: 25%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.page2 .pt2 .pt2txt h5{
+  width: 35%;
+  font-family: "Lexend", sans-serif;
+  font-size: 1.3vw;
+  font-weight: 350;
+}
+
+.page2 .pt2 .pt2txt p{
+  width: 55%;
+  font-family: "Lexend", sans-serif;
+  font-size: 1vw;
+  font-weight: 350;
+}
+
+.page3{ 
+  height: 180vh;
+  width: 100%;
+  padding: 10px 85px;
+}
+
+
+.page3 h2{
+  font-family: "Monument Extended Bold";
+  font-size: 2.3vw;
+}
+
+.page3 .p3center{
+  height: 45%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.page3 .p3center .pg3left{
+  height: 100%;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+}
+
+.page3 .p3center .pg3left .lefttop{
+  height: 70%;
+  width: 100%;
+  background: url('Adobe\ Express\ -\ file.png');
+  background-position: 50% 50%;
+  background-size: 70%;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+}
+
+.page3 .p3center .pg3left .lefttop img{
+  height: 20%;
+  width: 20%;
+}
+
+.page3 .p3center .pg3left p{
+  height: fit-content;
+  width: 100%;
+  font-family: "Lexend", sans-serif;
+  font-size: 1.2vw;
+  font-weight: 350;
+}
+
+
+
+.page3 .p3center .pg3right{
+  height: 100%;
+  width: 60%;
+  background: url('pg32.avif');
+  background-position: center top;
+  background-size: cover;
+  border-radius: 5px;
+
+}
+
+.page3 .bottom{
+  border-radius: 2px;
+  height: 55%;
+  width: 100%;
+  margin-top:60px ;
+}
+
+.page3 .bottom video{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: 50% 0;
+  padding: 2px;
+}
+
+
