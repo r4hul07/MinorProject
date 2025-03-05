@@ -16,7 +16,7 @@ main {
 }
 
 nav {
-  height: 70px;
+  height: 4vw;
   width: 100%;
   border-top: 2px solid black;
   border-bottom: 2px solid black;
@@ -37,6 +37,7 @@ nav h1 {
   letter-spacing: 0.5px;
   font-weight: 600;
   position: relative;
+  height: fit-content;
 }
 
 nav h1::after {
@@ -45,7 +46,7 @@ nav h1::after {
   font-family: "Lexend", sans-serif;
   font-size: 1vw;
   position: absolute;
-  top: 13%;
+  top: 0;
   right: 33%;
 }
 
@@ -55,7 +56,7 @@ nav h1::before {
   font-family: "Lexend", sans-serif;
   font-size: 0.6vw;
   position: absolute;
-  bottom: 13%;
+  bottom: -1%;
   right: 30%;
   letter-spacing: -0.5px;
 }
@@ -581,22 +582,23 @@ footer h1{
   font-size: 3vw;
   font-weight: 600;
   letter-spacing: 1px;
+  height: fit-content;
 }
 
-h1::after{
+footer h1::after{
   content: '©';
   position: absolute;
-  top: 8%;
-  right: 7%;
+  top: 22%;
+  right: 10%;
   font-family:  "Lexend", sans-serif;
-  font-size: 1.5vw;
-  font-weight: 300;
+  font-size: 1.2vw;
+  font-weight: 500;
 }
 
-h1::before{
+footer h1::before{
   content: 'Model Management';
   position: absolute;
-  top: 27%;
+  top: 64%;
   right: 0;
   font-family:  "Lexend", sans-serif;
   font-size: 0.5vw;
