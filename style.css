@@ -536,9 +536,11 @@ main .center .content .overlay .over2 img {
   border-top: 2px solid black;
   border-bottom: 2px solid black;
   overflow: hidden;
+  white-space: nowrap;
 }
 
 .marque .container {
+  display: inline-block;
   white-space: nowrap;
   animation: scroller 15s linear infinite;
 }
@@ -572,99 +574,80 @@ footer {
 }
 
 
-footer .f-elem{
-  height: 100%;
+footer h1{
+  padding: 2vw;
+  font-family: "New Amsterdam", sans-serif; 
+  position: relative;
+  font-size: 3vw;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+h1::after{
+  content: '©';
+  position: absolute;
+  top: 8%;
+  right: 7%;
+  font-family:  "Lexend", sans-serif;
+  font-size: 1.5vw;
+  font-weight: 300;
+}
+
+h1::before{
+  content: 'Model Management';
+  position: absolute;
+  top: 27%;
+  right: 0;
+  font-family:  "Lexend", sans-serif;
+  font-size: 0.5vw;
+  font-weight: 600;
+}
+
+footer h2{
+  padding: 2vw;
+  font-family: "Lexend", sans-serif;
+  font-size: 1.2vw;
+  font-weight: 500;
+}
+
+footer h3{
+  padding: 2vw;
+  font-family: "Lexend", sans-serif;
+  font-size: 1vw;
+  font-weight: 400;
+}
+
+.f-elem1{
+  border-right: 2px solid black;
   width: 40%;
   display: flex;
   justify-content: space-between;
+}
+
+
+
+.f-elem2{
   border-right: 2px solid black;
-}
-
-footer .f-elem:nth-child(1){
-  padding: 0 3vw;
-}
-
-footer .f-elem h1,h2{
-  margin: 2vw;
-}
-
-
-
-footer .f-elem h1{
-  font-family: "New Amsterdam", sans-serif;
-  font-size: 3vw;
-  font-weight: 500;
-  margin-left: 10px;
-  position: relative;
-}
-
-footer .f-elem h1::before{
-  content: "Model Management";
-  font-weight: 500;
-  font-family: "Lexend", sans-serif;
-  font-size: 0.6vw;
-  position: absolute;
-  top: 19%;
-  right: -10%;
-}
-
-footer .f-elem h1::after{
-  content: "©";
-  font-weight: 400;
-  font-family: "Lexend", sans-serif;
-  font-size: 1.4vw;
-  position: absolute;
-  top: -4%;
-}
-
-footer .f-elem h2{
-  font-family: "Lexend", sans-serif;
-  font-size: 1.3vw;
-  font-weight: 400;
-}
-
-footer .f-elem:nth-child(2){
   width: 20%;
   display: flex;
   justify-content: center;
 }
 
-footer .f-elem:nth-child(3){
-  padding: 0;
+
+.f-elem3{
   width: 40%;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  border: none;
 }
 
-footer .f-elem:nth-child(3) h3{
-  font-family: "Lexend", sans-serif;
-  font-size: 1 vw;
-  font-weight: 400;
-  margin: 2vw;
-}
-
-
-footer .f-elem .fbox .icons{
-  display: flex;
-  gap: 10px; 
-  padding: 2vw;
-  height: 40%;
-  width: 100%;
-}
-
-footer .f-elem .fbox .icons i{
-  font-size: 1.5vw;
-  color: black;
-  cursor: pointer;
-}
-
-
-
-
-.f-elem .fbox{
-  height: 70%;
-  width: 100%;
+.f-elem3 .fbox{
+  height: 60%;
   border-top: 2px solid black;
+}
+
+.f-elem3 .fbox .icons{
+  padding: 2vw;
+  height: 20%;
+}
+
+.f-elem3 .fbox .icons i{
+  font-size: 1.5vw;
 }
