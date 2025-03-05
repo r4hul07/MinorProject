@@ -73,9 +73,14 @@ nav h2 {
   font-weight: 400;
 }
 
-nav h2:nth-last-child(1) {
+nav h2:nth-last-child(2) {
   border: none;
   width: 18%;
+}
+
+nav h2:nth-last-child(1) {
+  border: none;
+  display: none;
 }
 
 main .center {
@@ -187,7 +192,7 @@ main .center .content .overlay .over2 img {
 }
 
 .alphabet {
-  height: 8vh;
+  height: 10%;
   width: 100%;
   margin-top: 10px;
   padding: 25px 20px;
@@ -197,15 +202,16 @@ main .center .content .overlay .over2 img {
   border-top: 2px solid black;
   border-bottom: 2px solid black;
   gap: 10px;
+  overflow: hidden;
 }
 
 .alphabet h4 {
   font-family: "Lexend", sans-serif;
-  font-size: 1.5vw;
+  font-size: 1.7vw;
   font-style: italic;
   font-weight: 300;
   text-decoration: underline;
-  margin-right: 15px;
+  margin-right: 1.4vw;
 }
 
 .alphabet h5 {
@@ -221,7 +227,6 @@ main .center .content .overlay .over2 img {
   letter-spacing: 5px;
   font-style: italic;
   font-weight: 300;
-  margin-left: 15px;
   cursor: pointer;
   transition: 0.5s ease;
 }
@@ -456,7 +461,7 @@ main .center .content .overlay .over2 img {
 .page5 .p5left {
   height: 100%;
   width: 48%;
-  background: url('pg5.avif');
+  background: url("pg5.avif");
   background-position: center top;
   background-size: cover;
 }
@@ -469,7 +474,7 @@ main .center .content .overlay .over2 img {
   justify-content: space-between;
 }
 
-.page5 .p5right h2{
+.page5 .p5right h2 {
   font-family: "New Amsterdam", sans-serif;
   font-size: 4vw;
   font-weight: 800;
@@ -477,20 +482,18 @@ main .center .content .overlay .over2 img {
   margin-top: 5px;
 }
 
-.page5 .p5right h5{
+.page5 .p5right h5 {
   font-family: "Lexend", sans-serif;
   font-size: 1.2vw;
   font-weight: 500;
   width: 60%;
 }
 
-
-.page5 .p5right p{
+.page5 .p5right p {
   font-family: "Lexend", sans-serif;
   font-size: 0.9vw;
   font-weight: 500;
 }
-
 
 .page5 .p5right .imagecontent {
   height: 40%;
@@ -499,39 +502,32 @@ main .center .content .overlay .over2 img {
   justify-content: space-between;
 }
 
-.page5 .p5right .imagecontent img{
+.page5 .p5right .imagecontent img {
   width: 55%;
   object-fit: cover;
   object-position: center top;
 }
 
-
-.page5 .p5right .imagecontent img:nth-last-child(1){
+.page5 .p5right .imagecontent img:nth-last-child(1) {
   width: 40%;
   object-position: center 10%;
 }
 
-
-
-.pg5extended{
+.pg5extended {
   height: 100%;
   width: 100%;
   padding: 5vw;
 }
 
-.pg5extended .imagecontent{
+.pg5extended .imagecontent {
   height: 100%;
   width: 100%;
-  background: url('pg5extended1.jpg');
+  background: url("p5ext.avif");
   background-position: center top;
   background-size: cover;
-
 }
 
-
-
 /* marque */
-
 
 .marque {
   border-top: 2px solid black;
@@ -574,10 +570,9 @@ footer {
   justify-content: space-between;
 }
 
-
-footer h1{
+footer h1 {
   padding: 2vw;
-  font-family: "New Amsterdam", sans-serif; 
+  font-family: "New Amsterdam", sans-serif;
   position: relative;
   font-size: 3vw;
   font-weight: 600;
@@ -585,71 +580,416 @@ footer h1{
   height: fit-content;
 }
 
-footer h1::after{
-  content: '©';
+footer h1::after {
+  content: "©";
   position: absolute;
   top: 22%;
   right: 10%;
-  font-family:  "Lexend", sans-serif;
+  font-family: "Lexend", sans-serif;
   font-size: 1.2vw;
   font-weight: 500;
 }
 
-footer h1::before{
-  content: 'Model Management';
+footer h1::before {
+  content: "Model Management";
   position: absolute;
   top: 64%;
   right: 0;
-  font-family:  "Lexend", sans-serif;
+  font-family: "Lexend", sans-serif;
   font-size: 0.5vw;
   font-weight: 600;
 }
 
-footer h2{
+footer h2 {
   padding: 2vw;
   font-family: "Lexend", sans-serif;
   font-size: 1.2vw;
   font-weight: 500;
 }
 
-footer h3{
+footer h3 {
   padding: 2vw;
   font-family: "Lexend", sans-serif;
   font-size: 1vw;
   font-weight: 400;
 }
 
-.f-elem1{
+.f-elem1 {
   border-right: 2px solid black;
   width: 40%;
   display: flex;
   justify-content: space-between;
 }
 
-
-
-.f-elem2{
+.f-elem2 {
   border-right: 2px solid black;
   width: 20%;
   display: flex;
   justify-content: center;
 }
 
-
-.f-elem3{
+.f-elem3 {
   width: 40%;
 }
 
-.f-elem3 .fbox{
+.f-elem3 .fbox {
   height: 60%;
   border-top: 2px solid black;
 }
 
-.f-elem3 .fbox .icons{
+.f-elem3 .fbox .icons {
   padding: 2vw;
   height: 20%;
 }
 
-.f-elem3 .fbox .icons i{
+.f-elem3 .fbox .icons i {
   font-size: 1.5vw;
+}
+
+@media (max-width: 600px) {
+  nav {
+    height: 7vh;
+    width: 100%;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    margin-top: 19.9px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  nav h1 {
+    font-family: "New Amsterdam", sans-serif;
+    width: 28%;
+    display: flex;
+    font-size: 6vw;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+    position: relative;
+    height: fit-content;
+  }
+
+  nav h1::after {
+    content: "©";
+    font-weight: 400;
+    font-family: "Lexend", sans-serif;
+    font-size: 2vw;
+    position: absolute;
+    top: 0;
+    right: 14%;
+  }
+
+  nav h1::before {
+    display: none;
+  }
+
+  nav h2 {
+    display: none;
+  }
+
+  nav h2:nth-last-child(1) {
+    display: flex;
+    font-family: "Lexend", sans-serif;
+    font-size: 6vw;
+    font-weight: 400;
+  }
+
+  main .center {
+    height: 70vh;
+    position: relative;
+    width: 100%;
+    padding: 40px;
+  }
+
+  main .center .content .overlay {
+    height: 30%;
+  }
+
+  main .center .content .overlay .over1 h1 {
+    font-size: 5vw;
+    font-weight: 500;
+  }
+
+  main .center .content .overlay .over1 h2 {
+    padding: 1vw 2.6vw;
+    font-size: 5vw;
+  }
+
+  main .center .content .overlay .over2 {
+    margin-top: 16px;
+    padding: 10px 0;
+  }
+
+  main .center .content .overlay .over2 h3 {
+    font-size: 3vw;
+    font-weight: 300;
+  }
+
+  main .center .content .overlay .over2 img {
+    height: 4.5vw;
+  }
+
+  .logos {
+    height: 14vh;
+    padding: 16px 0;
+  }
+
+  .logos .logo-slide img {
+    height: 10vh;
+    width: 10vh;
+    margin: 0 14px;
+  }
+
+  .alphabet {
+    height: 5vh;
+    width: 100%;
+    margin-top: 30px;
+    padding: 25px 20px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    gap: 5px;
+  }
+
+  .alphabet::after {
+    content: ">>";
+    cursor: pointer;
+  }
+
+  .alphabet h4 {
+    font-size: 4vw;
+
+    font-weight: 300;
+
+    margin-right: 1vw;
+  }
+
+  .alphabet h5 {
+    font-size: 3vw;
+    font-weight: 400;
+    height: 4vw;
+    width: 4vw;
+    border-radius: 50%;
+    transition: 0.5s ease;
+  }
+
+  .alphabet h5:nth-child(n + 18) {
+    display: none;
+  }
+
+  .alphabet h5:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border: 1px solid black;
+  }
+
+  .page2 {
+    margin-top: 20px;
+    height: 60vh;
+    width: 100%;
+    padding: 3vw 5vw;
+
+    gap: 20px;
+  }
+
+  .page2 .pt1 {
+    width: 54%;
+
+    background-size: 200%;
+    background-repeat: no-repeat;
+    background-position: 55% top;
+  }
+
+  .page2 .pt2 {
+    height: 100%;
+    width: 44%;
+  }
+
+  .page2 .pt2 img {
+    height: 75%;
+    width: 100%;
+    object-fit: cover;
+    object-position: 40% 0;
+  }
+
+  .page2 .pt2 .pt2txt {
+    padding-top: 10px;
+  }
+
+  .page2 .pt2 .pt2txt h5 {
+    font-size: 2.5vw;
+  }
+
+  .page2 .pt2 .pt2txt p {
+    font-size: 2vw;
+  }
+
+  .page3 {
+    height: 100vh;
+    padding: 3vw 5vw;
+  }
+
+  .page3 h2 {
+    font-size: 8vw;
+  }
+
+  .page3 .p3center {
+    margin-top: 15px;
+  }
+
+  .page3 .p3center .pg3left .lefttop {
+    background-size: 90%;
+  }
+
+  .page3 .p3center .pg3left .lefttop img {
+    height: 30%;
+    width: 40%;
+  }
+
+  .page3 .p3center .pg3left p {
+    font-size: 3vw;
+  }
+
+  .page3 .p3center .pg3right {
+    height: 100%;
+    width: 60%;
+    background: url("pg32.avif");
+    background-position: 55% 0;
+    background-size: cover;
+    border-radius: 5px;
+  }
+
+  .page3 .bottom h3 {
+    font-size: 4vw;
+    height: 5vw;
+    width: 5vw;
+
+    right: 2%;
+    top: 2%;
+  }
+
+  .page4 {
+    height: 60vh;
+
+    margin-top: 15vh;
+    margin-bottom: 0;
+  }
+
+  .page4 > h2 {
+    font-size: 8vw;
+
+    letter-spacing: 1px;
+  }
+
+  .page4 .p4center {
+    margin-top: 0;
+    height: 90%;
+    width: 100%;
+    padding: 25px;
+  }
+
+  .page4 .p4center .elem h4 {
+    font-family: "Lexend", sans-serif;
+    font-size: 3vw;
+    font-weight: 400;
+    width: 14%;
+  }
+
+  .page4 .p4center .elem img {
+    height: 8vh;
+    width: 8vh;
+  }
+
+  .elem-in {
+    width: 50%;
+  }
+
+  .elem-in h3 {
+    font-size: 3.4vw;
+  }
+
+  .elem-in h5 {
+    font-family: "Lexend", sans-serif;
+    font-size: 1.5vh;
+    font-weight: 300;
+  }
+
+  .page5 {
+    height: 50vh;
+  }
+
+  .page5 .p5right h2 {
+    font-size: 4vh;
+
+    margin-top: 0;
+  }
+
+  .page5 .p5right h5 {
+    font-size: 1.5vh;
+    font-weight: 400;
+  }
+
+  .page5 .p5right p {
+    font-size: 1vh;
+    font-weight: 400;
+  }
+
+  .pg5extended {
+    height: 35vh;
+    padding: 5vw;
+  }
+
+  .pg5extended .imagecontent {
+    background: url("p5ext.avif");
+    background-position: center top;
+    background-size: cover;
+    
+  }
+
+  .marque .container h1 {
+    font-size: 3vh;
+  }
+
+  footer {
+    margin-top: 4vh;
+    height: 15vh;
+  }
+
+  footer h1 {
+    padding: 3vw;
+    position: relative;
+    font-size: 3vh;
+  }
+
+  footer h1::after {
+    content: "©";
+
+    top: 22%;
+    right: 5%;
+    font-size: 1vh;
+    font-weight: 400;
+  }
+
+  footer h1::before {
+    display: none;
+  }
+
+  footer h2 {
+    padding: 2vh;
+    font-size: 1.3vh;
+    font-weight: 400;
+  }
+
+  footer h3 {
+    padding: 2vh;
+    font-size: 0.8vh;
+    font-weight: 400;
+  }
+
+  .f-elem3 .fbox .icons {
+    padding: 1vh 2vh;
+  }
+
+  .f-elem3 .fbox .icons i {
+    font-size: 1.5vh;
+  }
 }
